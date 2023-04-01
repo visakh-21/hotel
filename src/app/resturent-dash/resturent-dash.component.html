@@ -14,9 +14,9 @@
     <h1 class="display-5 fw-bold">Resturent Record Management</h1>
     <hr class="my-4">
     <p> save records</p>
-    <p class="lead">
+    <!-- <p class="lead">
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </p>
+    </p> -->
   </div>
 </div>
 <table class="table">
@@ -102,7 +102,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form >
+            <form  [formGroup]="formValue">
                 <div class="mb-3">
                   <label  class="form-label">Name</label>
                   <input type="text" formControlName="name" class="form-control" placeholder="Resturent Name" id="exampleInputEmail1" aria-describedby="emailHelp">
